@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exocitose, Secreção e Excreção — Fluxo de Membranas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Fluxo de Membranas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu4">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu4">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="fluxo.html">Fluxo</a></li>
+          <li class="nav-item"><a class="nav-link" href="endocitose.html">Endocitose</a></li>
+          <li class="nav-item"><a class="nav-link active" href="exocitose.html">Exocitose</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1>Exocitose, Secreção e Excreção</h1>
+    <p class="lead">Como as células liberam substâncias e a diferença entre secreção e excreção.</p>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Exocitose</h3>
+        <p>Vesículas intracelulares se fundem com a membrana plasmática e liberam seu conteúdo para o espaço extracelular. Pode ser constitutiva (contínua) ou regulada (em resposta a sinal).</p>
+
+        <h3>Secreção</h3>
+        <p>Se refere à liberação de moléculas com função no organismo — hormônios, enzimas, muco. Em muitas células, a secreção ocorre por exocitose regulada.</p>
+
+        <h3>Excreção</h3>
+        <p>Remoção de resíduos e subprodutos do metabolismo. Nem toda excreção é por vesículas — alguns resíduos são transportados por canais ou bombas, mas também podem ser eliminados via vesículas.</p>
+
+        <h4>Exemplos</h4>
+        <ul>
+          <li>Insulina: sintetizada, empacotada e liberada por exocitose pelas células beta do pâncreas.</li>
+          <li>Neurotransmissores: exocitose de vesículas sinápticas na fenda sináptica.</li>
+          <li>Degradação intracelular: lisossomos drenam resíduos digeridos que podem ser excretados.</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Resumo visual</h5>
+            <p class="small">Na biomaket: vesículas verdes representam vesículas secretoras prontas para se fundir com a membrana.</p>
+            <button class="btn btn-sm btn-outline-primary" id="openModalVideo">Reproduzir vídeo (exemplo)</button>
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <img src="images/biomaket.jpg" class="card-img-top" alt="biomaket">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <section>
+      <h4>Vídeo: Exocitose e secreção</h4>
+      <div class="ratio ratio-16x9">
+        <video controls>
+          <source src="videos/exocitose.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal (video exemplo) -->
+  <div class="modal fade" id="modalVideo" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vídeo — Exocitose (exemplo)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="videos/exocitose.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-primary text-white py-3 mt-5">
+    <div class="container d-flex justify-content-between">
+      <div>Desenvolvido por Ludmila Tawane</div>
+      <div>Autoria Web / Biologia</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
