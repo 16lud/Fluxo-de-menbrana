@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Endocitose — Fluxo de Membranas</title>
+  <title>Exocitose, Secreção e Excreção — Fluxo de Membranas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,61 +11,61 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="index.html">Fluxo de Membranas</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu3">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu4">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navMenu3">
+      <div class="collapse navbar-collapse" id="navMenu4">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="fluxo.html">Fluxo</a></li>
-          <li class="nav-item"><a class="nav-link active" href="endocitose.html">Endocitose</a></li>
-          <li class="nav-item"><a class="nav-link" href="exocitose.html">Exocitose</a></li>
+          <li class="nav-item"><a class="nav-link" href="endocitose.html">Endocitose</a></li>
+          <li class="nav-item"><a class="nav-link active" href="exocitose.html">Exocitose</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main class="container my-5">
-    <h1>Endocitose</h1>
-    <p class="lead">Processo de internalização de partículas, líquidos e membrana plasmática.</p>
+    <h1>Exocitose, Secreção e Excreção</h1>
+    <p class="lead">Como as células liberam substâncias e a diferença entre secreção e excreção.</p>
 
     <div class="row">
-      <div class="col-md-7">
-        <h3>Tipos de endocitose</h3>
-        <h5>Fagocitose</h5>
-        <p>Entrada de partículas grandes (ex.: bactérias) por células especializadas como macrófagos. Forma-se uma vacúola chamada fagossomo que se funde com lisossomos para digestão.</p>
+      <div class="col-md-8">
+        <h3>Exocitose</h3>
+        <p>Vesículas intracelulares se fundem com a membrana plasmática e liberam seu conteúdo para o espaço extracelular. Pode ser constitutiva (contínua) ou regulada (em resposta a sinal).</p>
 
-        <h5>Pinocitose</h5>
-        <p>"Beber" o líquido extracelular em pequenas vesículas, processo não específico e contínuo em muitas células.</p>
+        <h3>Secreção</h3>
+        <p>Se refere à liberação de moléculas com função no organismo — hormônios, enzimas, muco. Em muitas células, a secreção ocorre por exocitose regulada.</p>
 
-        <h5>Endocitose mediada por receptor</h5>
-        <p>Moléculas específicas (p.ex.: LDL) ligam-se a receptores de membrana; a região recobre-se com clatrina e é internalizada — eficiente e seletiva.</p>
+        <h3>Excreção</h3>
+        <p>Remoção de resíduos e subprodutos do metabolismo. Nem toda excreção é por vesículas — alguns resíduos são transportados por canais ou bombas, mas também podem ser eliminados via vesículas.</p>
+
+        <h4>Exemplos</h4>
+        <ul>
+          <li>Insulina: sintetizada, empacotada e liberada por exocitose pelas células beta do pâncreas.</li>
+          <li>Neurotransmissores: exocitose de vesículas sinápticas na fenda sináptica.</li>
+          <li>Degradação intracelular: lisossomos drenam resíduos digeridos que podem ser excretados.</li>
+        </ul>
       </div>
 
-      <div class="col-md-5">
-        <div class="card mb-3">
+      <div class="col-md-4">
+        <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Pontos importantes</h5>
-            <ul>
-              <li>Permite captação de nutrientes;</li>
-              <li>Regulação de sinais por remoção de receptores;</li>
-              <li>Passagem inicial para endossomos e depois lisossomos ou reciclagem.</li>
-            </ul>
+            <h5 class="card-title">Resumo visual</h5>
+            <p class="small">Na biomaket: vesículas verdes representam vesículas secretoras prontas para se fundir com a membrana.</p>
+            <button class="btn btn-sm btn-outline-primary" id="openModalVideo">Reproduzir vídeo (exemplo)</button>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card mt-3">
           <img src="biomaket.jpg" class="card-img-top" alt="biomaket">
-          <div class="card-body small">
-            <p class="mb-0">Na biomaket: regiões marcadas com setas indicam invaginações e vesículas de endocitose.</p>
-          </div>
         </div>
       </div>
     </div>
 
     <hr>
     <section>
-      <h4>Vídeo: Endocitose</h4>
+      <h4>Vídeo: Exocitose e secreção</h4>
       <div class="ratio ratio-16x9">
         <video controls>
           <source src="video.mp4" type="video/mp4">
@@ -75,10 +75,29 @@
 
   </main>
 
+  <!-- Modal (video exemplo) -->
+  <div class="modal fade" id="modalVideo" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Vídeo — Exocitose (exemplo)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="videos/exocitose.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="bg-primary text-white py-3 mt-5">
     <div class="container d-flex justify-content-between">
-      <div>Desenvolvido por ludmila tawane, maria clara, karene manuelle e mariane yasmin. </div>
-      <div>projeto integrador / Biologia</div>
+      <div>Desenvolvido por Ludmila Tawane, maria clara, karen emanuelle e mariane yasmin.</div>
+      <div>Autoria Web / Biologia</div>
     </div>
   </footer>
 
@@ -86,4 +105,5 @@
   <script src="js/scripts.js"></script>
 </body>
 </html>
+
 
